@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Bowser
+GenericName=Web Browser
+Comment=URL-dispatching browser router
+Exec=/usr/local/bin/bowser %u
+Terminal=false
+Type=Application
+Icon=web-browser
+Categories=Network;WebBrowser;
+MimeType=x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=false
+NoDisplay=false

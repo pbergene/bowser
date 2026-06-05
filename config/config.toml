@@ -1,0 +1,29 @@
+# Bowser configuration
+# Copy this file to ~/.config/bowser/config.toml and customise as needed.
+
+# Browser to use when no rule matches.
+default_browser = "chrome"
+
+# Rules are evaluated top-to-bottom; the first match wins.
+# Patterns use glob syntax and are matched against the URL hostname only.
+# Examples: "*.work.com", "sharepoint.com", "*.internal"
+[[rules]]
+pattern = "*.work.com"
+browser = "edge"
+
+[[rules]]
+pattern = "sharepoint.com"
+browser = "edge"
+
+# ── Browser definitions ────────────────────────────────────────────────────────
+# Each section configures a browser registered in browsers/__init__.py.
+# "command" defaults to the browser's built-in default if omitted.
+# "flags"   is a list of extra command-line arguments passed before the URL.
+
+[browsers.chrome]
+command = "google-chrome"
+flags = []
+
+[browsers.edge]
+command = "microsoft-edge"
+flags = []
